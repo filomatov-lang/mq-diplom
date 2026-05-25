@@ -716,7 +716,7 @@ h4 {
   flex-direction: column;
   width: calc(50% - var(--gap-product-card) / 2);
   box-sizing: border-box;
-  padding: 0 20px 27px; /* добавил боковые падинги, нижни по вёрстке*/
+  padding: 0 20px 27px;
 }
 
 .product-imgbox {
@@ -972,7 +972,6 @@ h4 {
   height: 100%;
  
   background: rgba(0, 0, 0, 0.6)
- 
 }
 
 .popup-content {
@@ -1156,7 +1155,7 @@ h4 {
 .textarea-form-button:hover {
   background: #000000;
 }
-/*
+
 @media (orientation: landscape) and (min-width: 641px) and (max-width: 1199px) {
   .wrapper-trends-card {
     flex-wrap: nowrap;
@@ -1165,4 +1164,4 @@ h4 {
   .trends-card {
     width: 25%;
   } 
-}*/
+}
