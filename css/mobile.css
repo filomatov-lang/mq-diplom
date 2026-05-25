@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --gap-trends-card: 3px;
 }
 
@@ -1154,9 +1154,10 @@ h4 {
   background: #000000;
 }
 
+/*
 @media (orientation: landscape) and (max-width: 640px) {
   .trends-card {
     align-items: flex-end;
     width: calc(50% - var(--gap-trends-card) / 2);
   }
-}
+}*/

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --gap-trends-card: 4px;
   --gap-product-card: 23px;
 }
@@ -1156,6 +1156,7 @@ h4 {
   background: #000000;
 }
 
+/*
 @media (orientation: landscape) and (min-width: 641px) and (max-width: 1199px) {
   .wrapper-trends-card {
     flex-wrap: nowrap;
@@ -1165,3 +1166,4 @@ h4 {
     width: 25%;
   } 
 }
+*/
