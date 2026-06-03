@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MQ diplom</title>
-  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 640px)">
-  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 641px) and (max-width: 1199px)">
-  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1200px)">
+  <link rel="stylesheet" href="css/desktop.css">
 </head>
 
 <body>
@@ -417,7 +415,7 @@
           <h3 class="product-title">
             <a class="product-title-link" href="#0">Подушки на диван</a>
           </h3>
-          <p class="product-discription">Набор из двух подушек с модными принтами. Видео о создании <a class="product-discription-link" href="#0">здесь.</a></p>
+          <p class="product-discription">Набор из двух подушек с модными принтами. Видео о создании<a class="product-discription-link" href="#0">здесь.</a></p>
           <footer class="product-footer">
             <div class="product-prices">
               <span class="product-price-value">800 ₽</span>
@@ -503,13 +501,12 @@
       </div>
     </div>
   </footer>
-  <label class="popup-open-button" for="popup1">Открыть окно</label>
-  <input class="popup-state" type="checkbox" id="popup1">
-  <div class="popup">
-    <div class="popup-content">
-      <label class="popup-close-button" for="popup1"></label>
+ 
+  <dialog class="popup-dialog" aria-label="feedback" open="open">
+    <form class="popup-content" name="feedback" method="dialog">
+      <label class="popup-close-button" id="close"></label>
       <h3 class="title-popup">Ваш фидбек</h3>
-      <form class="select-form">
+      <div class="select-form">
         <label class="question-form" for="select-question">Как часто вы заходите на сайт?</label>
         <select class="select-answer" name="frequency-of-site-visits" id="select-question">
           <option value="every day">Почти каждый день</option>
@@ -517,22 +514,21 @@
           <option value="Every few weeks">Раз в несколько недель</option>
           <option value="Every few year">Несколько раз в год</option>
         </select>
-      </form>
-      <form class="radio-form">
+      </div>
+      <div class="radio-form">
         <span class="question-form">Вы подписаны на e-mail рассылку?</span>
         <input class="radio-form-answer" type="radio" name="radio-group" id="radio1">
         <label class="radio-form-answer-text" for="radio1">Да</label>
         <input class="radio-form-answer" type="radio" name="radio-group" id="radio2">
         <label class="radio-form-answer-text" for="radio2">Нет</label>
-      </form>
-      <form class="textarea-form">
+      </div>
+      <div class="textarea-form">
         <label class="question-form" for="field">Расскажите, какой контент вы хотели бы видеть
             на нашем сайте?</label>
         <textarea class="field-textarea" id="field" placeholder="Может, больше рецептов?"></textarea>
         <button class="textarea-form-button" type="submit">Отправить</button>
-      </form>  
-    </div>
-  </div>
+        </div>  
+    </form>
+  </dialog>
 </body> 
-
 </html>
